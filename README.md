@@ -11,7 +11,7 @@ Please make sure you have the following installed
 
 ## Setup for local building and testing
 * Clone this repo
-* Build: sbt package
+* Build: sbt assembly
 * Test: sbt test
 
 Please confirm that all of the test pass.
@@ -19,7 +19,7 @@ Please confirm that all of the test pass.
 ## Setup for local run with spark-submit
 After running sbt package run from the root directory
 ```
-spark-submit target/scala-2.12/data-transformations_2.12-0.1.jar 
+spark-submit target/scala-2.12/data-transformations-assembly-0.1.jar 
 ```
 
 Confirm that you see "Hello Spark" in the output.
